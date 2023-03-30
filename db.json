@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": "b4bee19f-23db-44f1-a498-a9368222f7ca",
+      "title": "First todo",
+      "completed": false
+    },
+    {
+      "id": "bde17881-41c4-4441-8129-f40551b67632",
+      "title": "Second Todo",
+      "completed": false
+    }
+  ]
+}
