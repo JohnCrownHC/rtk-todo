@@ -1,7 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
-import { todosSlice } from "@/store/todosSlice";
-import { todosApi } from "@/api/todos";
+import { configureStore } from '@reduxjs/toolkit';
+import { useDispatch } from 'react-redux';
+import { todosSlice } from '@/store/todosSlice';
+import { todosApi } from '@/api/todos';
 
 const store = configureStore({
   reducer: {

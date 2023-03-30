@@ -1,8 +1,8 @@
-import Head from "next/head";
-import { useGetTodosQuery } from "@/api/todos";
-import { TodoInterface } from "@/store/todosSlice";
-import { Todo } from "@/components/Todo/Todo";
-import { AddTodoForm } from "@/components/AddTodoForm/AddTodoForm";
+import Head from 'next/head';
+import { useGetTodosQuery } from '@/api/todos';
+import { TodoInterface } from '@/store/todosSlice';
+import { Todo } from '@/components/Todo/Todo';
+import { AddTodoForm } from '@/components/AddTodoForm/AddTodoForm';
 
 export default function Home() {
   const { data, isLoading } = useGetTodosQuery({});
@@ -22,10 +22,7 @@ export default function Home() {
       <div>
         <AddTodoForm />
         <div className="flex flex-col gap-1">
-          {data &&
-            data.map((todo: TodoInterface) => (
-              <Todo todo={todo} key={todo.id} />
-            ))}
+          {data && data.map((todo: TodoInterface) => <Todo todo={todo} key={todo.id} />)}
         </div>
       </div>
     </>

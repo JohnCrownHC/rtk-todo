@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export interface TodoInterface {
   id: string;
@@ -11,7 +11,7 @@ const initialState = {
 };
 
 export const todosSlice = createSlice({
-  name: "todos",
+  name: 'todos',
   initialState,
   reducers: {},
 });

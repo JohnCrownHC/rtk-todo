@@ -6,6 +6,17 @@
     "plugin:tailwindcss/recommended",
     "prettier"
   ],
+  "rules": {
+    "prettier/prettier": [
+      "off",
+      {
+        "singleQuote": true
+      }
+    ]
+  },
+  "globals": {
+    "module": "readonly"
+  },
   "env": {
     "browser": true,
     "es2021": true

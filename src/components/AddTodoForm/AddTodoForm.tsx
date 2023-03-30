@@ -1,14 +1,14 @@
-import { FC, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
-import { useAddTodoMutation } from "@/api/todos";
+import { FC, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import { useAddTodoMutation } from '@/api/todos';
 
 export const AddTodoForm: FC = () => {
-  const [todo, setTodo] = useState<string>("");
+  const [todo, setTodo] = useState<string>('');
   const [addTodo, { isLoading: isAdding }] = useAddTodoMutation();
 
   const onAddTodo = () => {
     addTodo({ id: uuidv4(), title: todo, completed: false });
-    setTodo("");
+    setTodo('');
   };
 
   return (
